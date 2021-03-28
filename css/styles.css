@@ -6,6 +6,10 @@ a {
 	text-decoration: none;
 }
 
+body {
+	background-color: #E0FFFF; 
+}
+
 .navbar-brand h1 { /* Restaurant name */
   font-family: 'Maven Pro', sans-serif;
   color: #2F4F4F;
@@ -14,6 +18,7 @@ a {
   font-weight: bold;
   text-shadow: 1px 1px 1px #222;
   margin-top: 5px;
+  vertical-align: middle;
   margin-bottom: 0;
   line-height: .5;
 }
@@ -28,4 +33,11 @@ a {
 .navbar-brand a:hover, .navbar-brand a:focus {
   text-decoration: none;
   text-decoration: inherit;
+}
+
+#logo {
+  background: url('https://scontent-hel3-1.cdninstagram.com/v/t51.2885-19/s150x150/94487675_913978739037614_4095671875638657024_n.jpg?tp=1&_nc_ht=scontent-hel3-1.cdninstagram.com&_nc_ohc=MZ8J6gcX5EAAX_ezLVA&ccb=7-4&oh=2f7eb7521ea2605b73d708e08bf8bca3&oe=6089D6B8&_nc_sid=276363') no-repeat;
+  width: 150px;
+  height: 150px;
+  margin: 10px 15px 10px 0;
 }
