@@ -15,12 +15,24 @@ body {
   color: #E0FFFF;
   font-size: 1.5em;
   text-transform: uppercase;
-  font-weight: bold;
   text-shadow: 1px 1px 1px #222;
-  margin-top: 58px;
-  vertical-align: center;
-  margin-bottom: 0;
-  line-height: .5;
+/*  margin-top: 20px;
+  margin-bottom: 20px;*/
+}
+
+@media (min-width: 768px) {
+  .navbar-brand.brand-md {
+    margin-top: 45px;
+    margin-bottom: 40px;	
+  }
+}
+
+@media (max-width: 767px) {
+  .navbar-brand.brand-sm {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-size: 1em;	
+  }
 }
 
 #header-nav {
@@ -33,6 +45,7 @@ body {
 .navbar-brand a:hover, .navbar-brand a:focus {
   text-decoration: none;
   text-decoration: inherit;
+  vertical-align: middle;
 }
 
 #logo {
@@ -41,7 +54,6 @@ body {
   width: 130px;
   height: 130px;
   padding: 2px;
-  vertical-align: center;
   float: left;	
-  margin: 10px 20px 10px 0;*/
+  margin: 10px 20px 10px 0;
 }
