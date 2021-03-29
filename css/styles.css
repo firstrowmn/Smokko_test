@@ -14,10 +14,14 @@ body {
   font-family: 'Maven Pro', sans-serif;
   color: #E0FFFF;
   font-size: 1.5em;
-  text-transform: uppercase;
   text-shadow: 1px 1px 1px #222;
+  line-height: 0.5;
 /*  margin-top: 20px;
   margin-bottom: 20px;*/
+}
+
+p.navbar-brand {
+  font-size: 0.5em;
 }
 
 @media (min-width: 768px) {
@@ -56,4 +60,10 @@ body {
   padding: 2px;
   float: left;	
   margin: 10px 20px 10px 0;
+}
+
+.navbar-toggler {
+  background-color: transparent;
+  border: 1.5px  #E0FFFF;
+  size:1.5em;
 }
