@@ -15,7 +15,7 @@ body {
   color: #E0FFFF;
   font-size: 1.5em;
   text-shadow: 1px 1px 1px #222;
-  line-height: 0.5;
+  /*line-height: 0.5;*/
 /*  margin-top: 20px;
   margin-bottom: 20px;*/
 }
@@ -29,13 +29,19 @@ p.navbar-brand {
     margin-top: 45px;
     margin-bottom: 40px;	
   }
+  h1 {
+    line-height: 0.5;
+  }
 }
 
 @media (max-width: 767px) {
   .navbar-brand.brand-sm {
-    margin-top: 15px;
-    margin-bottom: 5px;
+    margin-top: 12px;
+    margin-bottom: 3px;
     font-size: 1em;	
+  }
+  h1 {
+  line-height: 0.4;
   }
 }
 
