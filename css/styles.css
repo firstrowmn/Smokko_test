@@ -68,8 +68,8 @@ p.navbar-brand {
   margin: 10px 20px 10px 0;
 }
 
-.navbar-toggler {
-  background-color: transparent;
-  border: 1.5px  #E0FFFF;
-  size:1.5em;
+#navbarNavDropdown {
+  font-size: 1.2em;
+  color: #FFFFFF;
+  text-shadow: 1px 1px 1px #696969;
 }
