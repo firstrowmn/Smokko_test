@@ -15,9 +15,6 @@ body {
   color: #E0FFFF;
   font-size: 1.5em;
   text-shadow: 1px 1px 1px #222;
-  /*line-height: 0.5;*/
-/*  margin-top: 20px;
-  margin-bottom: 20px;*/
 }
 
 p.navbar-brand {
@@ -26,8 +23,7 @@ p.navbar-brand {
 
 @media (min-width: 768px) {
   .navbar-brand.brand-md {
-    margin-top: 45px;
-    margin-bottom: 40px;	
+    padding-top:30px;
   }
   h1 {
     line-height: 0.5;
@@ -36,8 +32,7 @@ p.navbar-brand {
 
 @media (max-width: 767px) {
   .navbar-brand.brand-sm {
-    margin-top: 12px;
-    margin-bottom: 3px;
+    padding-top:17px;
     font-size: 1em;	
   }
   h1 {
@@ -46,7 +41,7 @@ p.navbar-brand {
 }
 
 #header-nav {
-  background-color: #5F9EA0;
+  background-color: #2F4F4F;
   border-radius: 0;
   border: 0;
   text-decoration: none;
@@ -55,21 +50,23 @@ p.navbar-brand {
 .navbar-brand a:hover, .navbar-brand a:focus {
   text-decoration: none;
   text-decoration: inherit;
-  vertical-align: middle;
 }
 
 #logo {
   background: url('/imgs/logo1.png') no-repeat;
   background-size: cover;
-  width: 130px;
-  height: 130px;
+  width: 100px;
+  height: 100px;
   padding: 2px;
   float: left;	
-  margin: 10px 20px 10px 0;
+  margin: 10px 25px 10px 0;
 }
 
 #navbarNavDropdown {
-  font-size: 1.2em;
-  color: #FFFFFF;
+  font-size: 1.3em;
   text-shadow: 1px 1px 1px #696969;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #E0FFFF;
 }
