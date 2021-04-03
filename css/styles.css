@@ -22,7 +22,7 @@ p.navbar-brand {
 }
 
 @media (min-width: 768px) {
-  .navbar-brand.brand-md {
+  .navbar-brand.brand-md{
     padding-top:30px;
   }
   h1 {
