@@ -83,12 +83,16 @@ p#heading {
   font-weight: bold;
 }
 
+div#innerbxs {
+  background-color: #2F4F4F;
+  padding: 10px;
+  color: #E0FFFF;
+}
 div#Chicken, div#Beef, div#Sushi {
   float: left;
   padding: 0 8px 10px 8px;
-  background-color: #696969
-  border: 1px #696969;
-  text-align: justify-all;
+  border: 1px black;
+  text-align: justify;
 }
 
  p#categoryheading {
