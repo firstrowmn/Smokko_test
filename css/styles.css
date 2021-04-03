@@ -14,7 +14,7 @@ body {
   font-family: 'Maven Pro', sans-serif;
   color: #E0FFFF;
   font-size: 1.5em;
-  text-shadow: 1px 1px 1px #222;
+  text-shadow: 1px 1px 1px #696969;
 }
 
 p.navbar-brand {
@@ -53,7 +53,7 @@ p.navbar-brand {
 }
 
 #logo {
-  background: url('/imgs/logo1.png') no-repeat;
+  background: url('../imgs/logo1.png') no-repeat;
   background-size: cover;
   width: 100px;
   height: 100px;
@@ -69,4 +69,11 @@ p.navbar-brand {
 
 .navbar-dark .navbar-nav .nav-link {
   color: #E0FFFF;
+}
+
+p#heading {
+  font-size: 2em;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 5px;
 }
