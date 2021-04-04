@@ -43,7 +43,7 @@ p.navbar-brand {
 #header-nav {
   background-color: #2F4F4F;
   border-radius: 0;
-  border: 0;
+  border-bottom: 1px solid #E0FFFF;
   text-decoration: none;
 }
 
