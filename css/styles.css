@@ -100,3 +100,8 @@ div#Chicken, div#Beef, div#Sushi {
   margin-bottom: 5px;
   font-weight: bold;
 }
+
+hr {
+  background-color: #E0FFFF;
+  opacity: 80%;
+}
