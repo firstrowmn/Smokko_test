@@ -101,7 +101,7 @@ div#Chicken, div#Beef, div#Sushi {
   font-weight: bold;
 }
 
-hr {
+hr.d-block.d-sm-none {
   background-color: #E0FFFF;
-  opacity: 80%;
+  opacity: .15;
 }
