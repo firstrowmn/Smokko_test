@@ -6,81 +6,81 @@
 
   body {
   	background-color: #3d3d3d; 
-    /*background: url('../imgs/backdrop1.jpg') no-repeat;*/
   }
 
 /*Шапка*/
-.navbar>.container-fluid { /* настройка контейнера шапки */
-  margin: 0px 20px 0px 20px; 
-}
+  .navbar>.container-fluid { /* настройка контейнера шапки */
+    margin: 0px 20px 0px 20px; 
+  }
 
-#header-nav {
-  background-color: #020403;
-  border-radius: 0;
-  border-bottom: 1px solid #E0FFFF;
-  text-decoration: none;
-}
+  #header-nav {
+    background-color: #020403;
+    border-radius: 0;
+    border-bottom: 1px solid #E0FFFF;
+    text-decoration: none;
+  }
 
-#logo { /* Логотип */
-  background: url('../imgs/logo1.png') no-repeat;
-  background-size: cover;
-  width: 100px;
-  height: 100px;
-  padding: 2px;
-  float: left;  
-  margin: 10px 25px 10px 0;
-}
+  #logo { /* Логотип */
+    background: url('../imgs/logo1.png') no-repeat;
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    padding: 2px;
+    float: left;  
+    margin: 10px 25px 10px 0;
+  }
 
-.navbar-brand h1 { /* Наименование ресторана */
-  font-family: 'Comfortaa', cursive;
-  color: #e2e4dc;
-  font-size: 1.8em;
-  text-shadow: 2px 2px 2px #924f1b;
-  clear: right;
-}
+  .navbar-brand h1 { /* Наименование ресторана */
+    font-family: 'Comfortaa', cursive;
+    color: #e2e4dc;
+    font-size: 1.8em;
+    text-shadow: 2px 2px 2px #924f1b;
+    clear: right;
+  }
 
-.navbar-dark .navbar-nav .nav-link { /* Цвет выпадающего меню */
-  font-family: 'Comfortaa', cursive;
-  color: #e2e4dc;
-  font-size: 1.2em;
-  text-shadow: 2px 2px 2px #924f1b;
-}
+  .navbar-dark .navbar-nav .nav-link { /* Цвет выпадающего меню */
+    font-family: 'Comfortaa', cursive;
+    color: #e2e4dc;
+    font-size: 1.2em;
+    text-shadow: 2px 2px 2px #924f1b;
+  }
 
-hr#lining { /* Разделительная черта для XS дисплеев */
-  background-color: #E0FFFF;
-  opacity: .15;
-  margin: 0;
-}
+  hr#lining { /* Разделительная черта для XS дисплеев */
+    background-color: #E0FFFF;
+    opacity: .15;
+    margin: 0;
+  }
 
-div#maincontent {
-  width: 100%;
-  padding: 5px 20px ;
-  position: relative;
-}
+/* Контент */
+  div#maincontent {
+    width: 100%;
+    padding: 5px 20px ;
+    position: relative;
+  }
 
-p#heading {
-  font-size: 2em;
-  text-align: center;
-  font-weight: bold;
-}
+  p#heading {
+    font-size: 2em;
+    text-align: center;
+    font-weight: bold;
+  }
 
-div#innerbxs {
-  background-color: #2F4F4F;
-  padding: 10px;
-  color: #E0FFFF;
-}
-div#Chicken, div#Beef, div#Sushi {
-  float: left;
-  padding: 0 8px 10px 8px;
-  border: 1px black;
-  text-align: justify;
-}
+  div#innerbxs {
+    background-color: #2F4F4F;
+    padding: 10px;
+    color: #E0FFFF;
+  }
+  div#Chicken, div#Beef, div#Sushi {
+    float: left;
+    padding: 0 8px 10px 8px;
+    border: 1px black;
+    text-align: justify;
+  }
 
- p#categoryheading {
-  text-align: center;
-  margin-bottom: 5px;
-  font-weight: bold;
-}
+   p#categoryheading {
+    text-align: center;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
 
 /* Responsiveness options */
   @media (min-width: 768px) {/* экраны M+ */
@@ -100,7 +100,17 @@ div#Chicken, div#Beef, div#Sushi {
       padding-top:17px;
       font-size: 1em; 
     }
+    .navbar-header {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+/*    button#navbutton{
+      position: absolute;
+    }*/
+
     h1 { /* высота строки наименования ресторана */
       line-height: 0.55;
+      text-align: center;
     }
   }
