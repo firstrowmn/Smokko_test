@@ -1,83 +1,55 @@
-* {
-	font-family: 'Maven Pro', sans-serif;
-}
+/*Общие настройк сайта*/
 
-a {
-	text-decoration: none;
-}
-
-body {
-	background-color: #3d3d3d; 
-  /*background: url('../imgs/backdrop1.jpg') no-repeat;*/
-}
-
-.navbar-brand h1 { /* Restaurant name */
-  font-family: 'Maven Pro', sans-serif;
-  color: #E0FFFF;
-  font-size: 2em;
-  text-shadow: 1px 1px 1px #696969;
-  clear: right;
-}
-
-.navbar>.container-fluid {
-  margin: 0px 20px 0px 20px;
-}
-
-p.navbar-brand {
-  font-size: 0.5em;
-}
-
-@media (min-width: 768px) {
-  .navbar-brand.brand-md{
-    padding-top:30px;
+  a {
+  	text-decoration: none;
   }
-  h1 {
-    line-height: 0.5;
-  }
-  #OrderList {
-  margin-left: 40px;
-  }
-}
 
-@media (max-width: 767px) {
-  .navbar-brand.brand-sm {
-    padding-top:17px;
-    font-size: 1em;	
+  body {
+  	background-color: #3d3d3d; 
+    /*background: url('../imgs/backdrop1.jpg') no-repeat;*/
   }
-  h1 {
-  line-height: 0.4;
-  }
+
+/*Шапка*/
+.navbar>.container-fluid { /* настройка контейнера шапки */
+  margin: 0px 20px 0px 20px; 
 }
 
 #header-nav {
-  background-color: #252525;
+  background-color: #020403;
   border-radius: 0;
   border-bottom: 1px solid #E0FFFF;
   text-decoration: none;
 }
 
-.navbar-brand a:hover, .navbar-brand a:focus {
-  text-decoration: none;
-  text-decoration: inherit;
-}
-
-#logo {
+#logo { /* Логотип */
   background: url('../imgs/logo1.png') no-repeat;
   background-size: cover;
   width: 100px;
   height: 100px;
   padding: 2px;
-  float: left;	
+  float: left;  
   margin: 10px 25px 10px 0;
 }
 
-#navbarNavDropdown {
-  font-size: 1.3em;
-  text-shadow: 1px 1px 1px #696969;
+.navbar-brand h1 { /* Наименование ресторана */
+  font-family: 'Comfortaa', cursive;
+  color: #e2e4dc;
+  font-size: 1.8em;
+  text-shadow: 2px 2px 2px #924f1b;
+  clear: right;
 }
 
-.navbar-dark .navbar-nav .nav-link {
-  color: #E0FFFF;
+.navbar-dark .navbar-nav .nav-link { /* Цвет выпадающего меню */
+  font-family: 'Comfortaa', cursive;
+  color: #e2e4dc;
+  font-size: 1.2em;
+  text-shadow: 2px 2px 2px #924f1b;
+}
+
+hr#lining { /* Разделительная черта для XS дисплеев */
+  background-color: #E0FFFF;
+  opacity: .15;
+  margin: 0;
 }
 
 div#maincontent {
@@ -110,9 +82,25 @@ div#Chicken, div#Beef, div#Sushi {
   font-weight: bold;
 }
 
-hr#lining {
-  background-color: #E0FFFF;
-  opacity: .15;
-  margin: 0;
-}
+/* Responsiveness options */
+  @media (min-width: 768px) {/* экраны M+ */
+    .navbar-brand.brand-md{
+      padding-top:30px;
+    }
+    h1 { /* высота строки наименования ресторана */
+      line-height: 0.62;
+    }
+    #OrderList {
+      margin-left: 40px;
+    }
+  }
 
+  @media (max-width: 767px) {/* экраны S- */
+    .navbar-brand.brand-sm {
+      padding-top:17px;
+      font-size: 1em; 
+    }
+    h1 { /* высота строки наименования ресторана */
+      line-height: 0.55;
+    }
+  }
