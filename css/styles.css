@@ -25,9 +25,17 @@
     background-size: cover;
     width: 100px;
     height: 100px;
-    padding: 2px;
+    padding: 5px;
     float: left;  
     margin: 10px 25px 10px 0;
+  }
+
+  #logo2 {
+    background: url('../imgs/logoXS.png') no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 200px;
+    height: 100px;
   }
 
   .navbar-brand h1 { /* Наименование ресторана */
@@ -139,13 +147,12 @@
       margin-left: auto;
       margin-right: auto;
     }
-    
-/*    button#navbutton{
-      position: absolute;
-    }*/
-
     h1 { /* высота строки наименования ресторана */
       line-height: 0.55;
       text-align: center;
+    }
+    #logo {
+      background: url('../imgs/backdrop.png') no-repeat;
+      height: 80px;
     }
   }
