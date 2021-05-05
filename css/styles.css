@@ -45,6 +45,11 @@
     text-shadow: 2px 2px 2px #924f1b;
   }
 
+  li {
+    margin-top:auto;
+    margin-bottom:auto;
+  }
+
   hr#lining { /* Разделительная черта для XS дисплеев */
     background-color: #E0FFFF;
     opacity: .15;
@@ -83,8 +88,9 @@
   }
 
 /* Responsiveness options */
-  @media (min-width: 768px) {/* экраны M+ */
-    .navbar-brand.brand-md{
+
+  @media (min-width: 992px) {/* экраны L+ */
+    .navbar-brand.brand-lg{
       padding-top:30px;
     }
     h1 { /* высота строки наименования ресторана */
@@ -92,6 +98,35 @@
     }
     #OrderList {
       margin-left: 40px;
+    }
+    #Basket {
+      width:50px;
+      height:50px;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 991px) {/* экраны M */
+    .navbar-brand.brand-md{
+      padding-top:26px;
+      font-size: 1.1em;
+    }
+    h1 { /* высота строки наименования ресторана */
+      line-height: 0.62;
+    }
+    #logo {
+      width: 85px;
+      height: 85px;
+      padding:1px;
+    }
+    .navbar-dark .navbar-nav .nav-link {
+      font-size: 1.1em;
+    }
+    #OrderList {
+      margin-left: 15px;
+    }
+    #Basket {
+      width:40px;
+      height:40px;
     }
   }
 
