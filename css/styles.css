@@ -34,8 +34,6 @@
     background: url('../imgs/logoXS.png') no-repeat;
     background-size: cover;
     position: absolute;
-    width: 200px;
-    height: 100px;
   }
 
   .navbar-brand h1 { /* Наименование ресторана */
@@ -99,10 +97,13 @@
 
   @media (min-width: 992px) {/* экраны L+ */
     .navbar-brand.brand-lg{
-      padding-top:30px;
+      padding-top:34px;
     }
     h1 { /* высота строки наименования ресторана */
       line-height: 0.62;
+    }
+    #sstring {
+      font-size:0.74em;
     }
     #OrderList {
       margin-left: 40px;
@@ -115,11 +116,14 @@
 
   @media (min-width: 768px) and (max-width: 991px) {/* экраны M */
     .navbar-brand.brand-md{
-      padding-top:26px;
+      padding-top:28px;
       font-size: 1.1em;
     }
     h1 { /* высота строки наименования ресторана */
       line-height: 0.62;
+    }
+    #sstring {
+      font-size:0.74em;
     }
     #logo {
       width: 85px;
@@ -154,5 +158,9 @@
     #logo {
       background: url('../imgs/backdrop.png') no-repeat;
       height: 80px;
+    }
+    #logo2 {
+      width: 200px;
+      height: 100px;
     }
   }
