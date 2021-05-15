@@ -123,11 +123,10 @@
   }
 
   #delivery {
-    font-family: 'Comfortaa', cursive;
-    font-size: 0.9em;
+    color: #e2e4dc;
   }
 
-  #delivery > a {
+  #deliverya {
     color: #959691;
     text-decoration: underline;
   }
@@ -152,14 +151,20 @@
   #testimonials p {
     font-family: 'Comfortaa', cursive;
     font-size: 0.8em;
-    margin-top: auto;
-    margin-bottom: auto;
+    /*margin-top: auto;
+    margin-bottom: auto;*/
   }
 
   #testimonials span {
     font-family: 'Comfortaa', cursive;
     font-size: 1.75em;
   }
+
+  a#tel:hover, a#delivery:hover, a#socialmed:hover, a#callus:hover {
+    text-decoration: underline;
+    color: #959691;
+  }
+
 
 /* Responsiveness options */
 
@@ -176,12 +181,15 @@
     #OrderList {
       margin-left: 40px;
     }
-
     .bi {
       font-size:1.9em;
       margin-top: 0px;
       padding-bottom: auto;
     }
+    a#callus {
+      font-size: 2em;
+    }
+
   }
 
   @media (min-width: 768px) and (max-width: 991px) {/* экраны M */
@@ -211,9 +219,12 @@
       margin-top: 0px;
       padding-bottom: auto;
     }
+    a#callus {
+      font-size: 1.6em;
+    }
   }
 
-  @media (max-width: 767px) {/* экраны S- */
+  @media (max-width: 767px) {/* экраны SM */
     .navbar-brand.brand-sm {
       padding-top:17px;
       font-size: 1em; 
@@ -247,15 +258,20 @@
       padding: 8px 0 8px 0;
     }
     .bi {
-      font-size: 1.5em;
+      font-size: 2em;
     }
-    #callus {
-      font-size: 0.8em;
-    }
-    .bi-telephone {
-      font-size: 2.1em;
-    }
-    #testimonials {
+    section#testimonials {
       padding-left: 12px;
+      padding-bottom: 1px;
+    }
+    a#tel {
+      color: #e2e4dc;
+      font-size: 1.4em;
+      padding-top: 9px;
+      padding-left:0px;
+      float: right;
+    }
+    a#callus {
+      font-size: 1.4em;
     }
   }
