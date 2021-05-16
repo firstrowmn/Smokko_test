@@ -33,6 +33,7 @@
   #logo2 {
     background: url('../imgs/logoXS.png') no-repeat;
     background-size: cover;
+    height: 50px;
     position: absolute;
   }
 
