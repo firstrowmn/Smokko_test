@@ -29,8 +29,17 @@
     float: left;  
     margin: 10px 25px 10px 0;
   }
+<<<<<<< HEAD
   div.navbar-header {
     text-align: center;
+=======
+
+  #logo2 {
+    background: url('../imgs/logoXS.png') no-repeat;
+    background-size: cover;
+    height: 50px;
+    position: absolute;
+>>>>>>> 242e330fba2cadf1cff10a7b19840c0532dd3fa4
   }
   .navbar-brand h1 { /* Наименование ресторана */
     font-family: 'Comfortaa', cursive;
@@ -236,12 +245,21 @@
       text-align: center;
     }
     #logo {
+<<<<<<< HEAD
       background: url('../imgs/logo1.png') no-repeat;
       background-size: cover;
       height: 62px;
       width: 62px;
       padding:1px;
       margin:5px 15px 5px;
+=======
+      background: url('../imgs/backdrop.png') no-repeat;
+      height: 50px;
+    }
+    #logo2 {
+      width: 200px;
+      height: 100px;
+>>>>>>> 242e330fba2cadf1cff10a7b19840c0532dd3fa4
     }
     .cart {
       font-size: auto;
