@@ -29,15 +29,18 @@
     float: left;  
     margin: 10px 25px 10px 0;
   }
+
   div.navbar-header {
     text-align: center;
   }
+
   #logo2 {
     background: url('../imgs/logoXS.png') no-repeat;
     background-size: cover;
     height: 50px;
     position: absolute;
   }
+
   .navbar-brand h1 { /* Наименование ресторана */
     font-family: 'Comfortaa', cursive;
     color: #e2e4dc;
@@ -84,10 +87,10 @@
   p#heading {
     font-family: 'Comfortaa', cursive;
     color: #E0FFFF;
-    font-size: 2em;
+    font-size: 1.7em;
     text-align: center;
     margin-bottom: 0px;
-    padding-top: 8px;
+    padding-top: 12px;
   }
 
   div#prefooter {
@@ -100,10 +103,9 @@
 
   div#Chicken, div#Beef, div#Sushi {
     font-family: 'Comfortaa', cursive;
-    height:250px;
     color: #e2e4dc;
     float: left;
-    padding: 0px 8px 10px 8px;
+    padding: 0px 8px 0px 8px;
     margin-top: 15px;
     text-align: justify;
   }
@@ -120,29 +122,32 @@
     margin-bottom: 0px;
     padding-top: 3px;
     bottom: 0;
-   }
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+  }
+
+  #innerbxs {
+    height:100%;
+    border-radius: 2px;
+  }
 
   #Chicken > #innerbxs  {
     background: url(../imgs/Меню/soups.jpeg) no-repeat center;
     background-size: cover;
-    height: 250px;
   }
 
   #Beef > #innerbxs{
     background: url(../imgs/Меню/main.jpg) no-repeat center;
     background-size: cover;
-    height: 250px;
   } 
 
   #Sushi > #innerbxs {
     background: url(../imgs/Меню/specials.jpg) no-repeat center;
     background-size: cover;
-    height: 250px;
-    margin-bottom: 20px;
   }
 
   #innerbxs:hover {
-    border: 1px solid #605e5f;
+    box-shadow: 0px 0px 15px #924f1b;
   }
 
 /* колонтитул */
@@ -154,6 +159,7 @@
     border-top: 1px solid #838584;
     clear: both;
     padding-top: 20px;
+    margin-top: 40px;
   }
 
   #copyright {
@@ -200,8 +206,7 @@
   }
 
 /* Responsiveness options */
-
-  @media (min-width: 992px) {/* экраны L+ */
+  @media (min-width: 1201px) {
     .navbar-brand.brand-lg{
       padding-top:34px;
     }
@@ -222,7 +227,35 @@
     a#callus {
       font-size: 2em;
     }
+    #Chicken, #Beef, #Sushi {
+      height: 230px;
+    }
+  }
 
+  @media (min-width: 992px) and (max-width: 1200px) {/* экраны L+ */
+    .navbar-brand.brand-lg{
+      padding-top:34px;
+    }
+    h1 { /* высота строки наименования ресторана */
+      line-height: 0.62;
+    }
+    #sstring {
+      font-size:0.74em;
+    }
+    #OrderList {
+      margin-left: 40px;
+    }
+    .bi {
+      font-size:1.9em;
+      margin-top: 0px;
+      padding-bottom: auto;
+    }
+    a#callus {
+      font-size: 2em;
+    }
+    #Chicken, #Beef, #Sushi {
+      height: 200px;
+    }
   }
 
   @media (min-width: 768px) and (max-width: 991px) {/* экраны M */
@@ -254,6 +287,9 @@
     }
     a#callus {
       font-size: 1.6em;
+    }
+    #Chicken, #Beef, #Sushi {
+      height: 180px;
     }
   }
 
@@ -323,4 +359,79 @@
       margin-bottom: 1px;
       text-align: left;
     }
+    #Chicken, #Beef, #Sushi {
+      height: 180px;
+    }
   }
+
+    @media (max-width: 575px) {/* экраны XS */
+    .navbar-brand.brand-sm {
+      padding-top:17px;
+      font-size: 1em; 
+    }
+    .navbar-brand {
+      text-align: left;
+    }
+    h1 { /* высота строки наименования ресторана */
+      line-height: 0.55;
+      text-align: center;
+    }
+    #logo { /* Замена логотипа на вариант для XS версии */
+      background: url('../imgs/logo2.png') no-repeat;
+      background-size: cover;
+      height: 50px;
+      width: 115px;
+      padding:1px;
+      margin:5px 15px 5px;
+      height: 50px;
+      position: absolute;
+      margin-left: auto;
+      margin-right: auto;
+      left: 0;
+      right: 0;
+    }
+    #logo2 { /*пустой рисуноу чтобы не схлопывалась панель навигации*/
+      background: url('../imgs/backdrop.png') no-repeat;
+      height: 31px;
+      width: 80px;
+      position: relative;
+    }
+    .cart {
+      font-size: auto;
+    }
+    .bi {
+      font-size: 0em;
+    }
+    a#notacart {
+      padding: 8px;
+    }
+    a#cart {
+      padding: 8px 0 8px 0;
+    }
+    .bi {
+      font-size: 2em;
+    }
+    section#testimonials {
+      padding: 0px 0px 0px 12px;
+      text-align: left;
+    }
+    a#tel {
+      color: #e2e4dc;
+      font-size: 1.4em;
+      padding-top: 0px;
+      text-align:left;
+    }
+    a#callus {
+      font-size: 1.4em;
+    }
+    p#sstring {
+      font-size: 0.75em;
+      line-height: 0.5;
+      margin-bottom: 1px;
+      text-align: left;
+    }
+    #Chicken, #Beef, #Sushi {
+      height: 250px;
+    }
+  }
+
