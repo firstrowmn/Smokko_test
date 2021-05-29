@@ -147,7 +147,7 @@
   }
 
   #innerbxs:hover {
-    box-shadow: 0px 0px 15px #924f1b;
+    box-shadow: 0px 0px 10px #924f1b;
   }
 
 /* колонтитул */
@@ -191,8 +191,6 @@
   #testimonials p {
     font-family: 'Comfortaa', cursive;
     font-size: 0.8em;
-    /*margin-top: auto;
-    margin-bottom: auto;*/
   }
 
   #testimonials span {
