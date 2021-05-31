@@ -101,9 +101,10 @@
 
   div#innerbxs {
     position: relative;
+    border: 1px solid #372010;
   }
 
-  div#Chicken, div#Beef, div#Sushi {
+  div.categories {
     font-family: 'Comfortaa', cursive;
     color: #e2e4dc;
     float: left;
@@ -133,17 +134,32 @@
     border-radius: 2px;
   }
 
-  #Chicken > #innerbxs  {
+  #Salads > #innerbxs {
+    background: url(../imgs/Меню/salads.jpg) no-repeat center;
+    background-size: cover;
+  }
+
+  #Sushi > #innerbxs {
+    background: url(../imgs/Меню/sushi.jpg) no-repeat center;
+    background-size: cover;  
+  }
+
+  #WOK > #innerbxs {
+    background: url(../imgs/Меню/wok.jpg) no-repeat center;
+    background-size: cover;
+  }
+
+  #Soups > #innerbxs  {
     background: url(../imgs/Меню/soups.jpeg) no-repeat center;
     background-size: cover;
   }
 
-  #Beef > #innerbxs{
+  #Main > #innerbxs{
     background: url(../imgs/Меню/main.jpg) no-repeat center;
     background-size: cover;
   } 
 
-  #Sushi > #innerbxs {
+  #Specials > #innerbxs {
     background: url(../imgs/Меню/specials.jpg) no-repeat center;
     background-size: cover;
   }
@@ -231,7 +247,7 @@
     a#callus {
       font-size: 2em;
     }
-    #Chicken, #Beef, #Sushi {
+    .categories {
       height: 230px;
     }
   }
@@ -257,7 +273,7 @@
     a#callus {
       font-size: 2em;
     }
-    #Chicken, #Beef, #Sushi {
+    .categories {
       height: 200px;
     }
   }
@@ -293,7 +309,7 @@
     a#callus {
       font-size: 1.6em;
     }
-    #Chicken, #Beef, #Sushi {
+    .categories {
       height: 180px;
     }
   }
@@ -367,7 +383,7 @@
       margin-bottom: 1px;
       text-align: left;
     }
-    #Chicken, #Beef, #Sushi {
+    .categories {
       height: 180px;
     }
   }
@@ -440,7 +456,7 @@
       margin-bottom: 1px;
       text-align: left;
     }
-    #Chicken, #Beef, #Sushi {
+    .categories {
       height: 250px;
     }
   }
