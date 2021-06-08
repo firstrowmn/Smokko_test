@@ -102,6 +102,12 @@
   div#innerbxs {
     position: relative;
     border: 1px solid #372010;
+    box-shadow: 0px 0px 5px #7f4b22;
+  }
+
+  #innerbxs:hover {
+    box-shadow: 0px 0px 10px #fcad70;
+    filter: brightness(1.15);
   }
 
   div.categories {
@@ -162,10 +168,6 @@
   #Specials > #innerbxs {
     background: url(../imgs/Меню/specials.jpg) no-repeat center;
     background-size: cover;
-  }
-
-  #innerbxs:hover {
-    box-shadow: 0px 0px 10px #924f1b;
   }
 
   div#prefooter {

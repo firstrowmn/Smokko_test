@@ -11,29 +11,26 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bellota:wght@300&display=swap" rel="stylesheet">
   </head>
 
   <body>
 
     <header> <!-- Панель навигации -->
        <nav id="header-nav" class="navbar navbar-expand-md navbar-dark">
-        <div class="container-fluid">
+        <div class="container">
 
-           <div class="navbar-header">
+           <div class="navbar-brand navbar-header">
               <a href="#">
                 <div id="logo"></div>
               </a>
-              
-              <a href="#">
-                <div id="logo2"></div>
-              </a>
-            
-              <div class="navbar-brand brand-md brand-sm brand-lg">
-                <a href="index.html" class="d-none d-md-block"><h1>
-                	<p>SMOKKO</p>
-                	<p id="sstring">food & shop</p>	
+                <div id="logo2" class="d-block d-md-none"></div>
+            <!--   <div class="navbar-brand brand-md brand-sm brand-lg">
+                <a href="index.html"><h1>
+                	<p id="fstring" class="d-none d-md-block">SMOKKO</p>
+                	<p id="sstring" class="d-none d-md-block">food & shop</p>	
                 </h1></a> 
-              </div>
+              </div> -->
            </div>
         <!-- Кнопка и вкладки // collapsable menu -->
     		  <button id="navbutton" class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -42,27 +39,26 @@
           			
      		  <div id="navbarNavDropdown" class="collapse navbar-collapse justify-content-end">
       	     <ul class="navbar-nav"> <!-- ссылки на разделы -->
-               <hr id="lining" class="d-block d-sm-none">
+               <hr id="lining" class="d-block d-md-none">
          		   <li class="nav-item text-center active">
            			 <a class="nav-link" id="notacart" href="#Chicken">Меню</a>
          		   </li>
 
-               <hr id="lining" class="d-block d-sm-none">
+               <hr id="lining" class="d-block d-md-none">
        			   <li class="nav-item text-center">
        			     <a class="nav-link" id="notacart" href="#Beef">Акции</a>
          		   </li>
-               <hr id="lining" class="d-block d-sm-none">
+               <hr id="lining" class="d-block d-md-none">
          		   <li class="nav-item text-center">
          		     <a class="nav-link" id="notacart" href="#Sushi">Доставка</a>
         		   </li>
-               <hr id="lining" class="d-block d-sm-none">
+               <hr id="lining" class="d-block d-md-none">
                <li id="OrderList" class="nav-item text-center brand-sm">
                  <a class="nav-link" id="cart" href="#Sushi">
                    <i class="bi bi-bag-check d-none d-md-block"></i>
                    <span class="d-md-none">Корзина</span>
                  </a>
                </li>
-               <hr id="lining" class="d-block d-sm-none">
        	     </ul>
 
     	      </div>
@@ -72,38 +68,53 @@
        </nav><!-- Панель навигации -->
     </header>  <!-- end of Панель навигации -->
 
-    <div id="maincontent" class="container-fluid"> <!-- Основной контент -->
+    <div id="maincontent" class="container"> <!-- Основной контент -->
       
       <div class="row">
-         <p id="heading">Our Menu</p>
+         <p id="heading">Меню</p>
       </div>
 
-      <div id="Chicken" class="container-fluid col-md-4 col-sm-6 col-xs-12">
+      <div id="Salads" class="categories container-fluid col-md-4 col-sm-6 col-xs-12">
         <div id="innerbxs">
-          <p id="categoryheading">Chicken</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit error quis ab perspiciatis eos inventore recusandae iste itaque numquam facilis, tenetur. Doloribus officiis quae facilis, nisi, ex similique. Animi, perferendis.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit error quis ab perspiciatis eos inventore recusandae iste itaque numquam facilis, tenetur. </p>
-          <p><a href="#header-nav">Back to Top</a></p>
-        </div>
-      </div>
-      <div id="Beef" class="container-fluid col-md-4 col-sm-6 col-xs-12">
-        <div id="innerbxs">
-          <p id="categoryheading">Beef</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit error quis ab perspiciatis eos inventore recusandae iste itaque numquam facilis, tenetur. Doloribus officiis quae facilis, nisi, ex similique. Animi, perferendis.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit error quis ab perspiciatis eos inventore recusandae iste itaque numquam facilis, tenetur. </p>
-          <p><a href="#header-nav">Back to Top</a></p>
+          <p id="categoryheading">Салаты</p>
         </div>
       </div>
 
-      <div id="Sushi" class="container-fluid col-md-4 col-sm-12 col-xs-12">
+      <div id="Sushi" class="categories container-fluid col-md-4 col-sm-6 col-xs-12">
         <div id="innerbxs">
-          <p id="categoryheading">Sushi</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit error quis ab perspiciatis eos inventore recusandae iste itaque numquam facilis, tenetur. Doloribus officiis quae facilis, nisi, ex similique. Animi, perferendis.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit error quis ab perspiciatis eos inventore recusandae iste itaque numquam facilis, tenetur. </p>
-          <p><a href="#header-nav">Back to Top</a></p>
+          <p id="categoryheading">Роллы</p>
         </div>
       </div>
+
+      <div id="WOK" class="categories container-fluid col-md-4 col-sm-6 col-xs-12">
+        <div id="innerbxs">
+          <p id="categoryheading">WOK</p>
+        </div>
+      </div>
+
+      <div id="Soups" class="categories container-fluid col-md-4 col-sm-6 col-xs-12">
+        <div id="innerbxs">
+          <p id="categoryheading">Cупы</p>
+        </div>
+      </div>
+
+      <div id="Main" class="categories container-fluid col-md-4 col-sm-6 col-xs-12">
+        <div id="innerbxs">
+          <p id="categoryheading">Горячие блюда</p>
+        </div>
+      </div>
+
+      <div id="Specials" class="categories container-fluid col-md-4 col-sm-6 col-xs-12">
+        <div id="innerbxs">
+          <p id="categoryheading">Закуски</p>
+        </div>
+      </div>
+
+      <div class="row" id="prefooter"></div>
     </div> <!-- end of Основной контент -->
 
     <footer class="panel-footer"> <!-- Колонтитул -->
-      <div class="container-fluid">
+      <div class="container">
         <div class="row">
           <section id="hours" class="col-sm-4">
             <span>Режим работы:</span><br>
