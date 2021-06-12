@@ -2,6 +2,7 @@
 
   a {
   	text-decoration: none;
+    cursor: pointer;
   }
 
   body {
@@ -30,9 +31,10 @@
     margin: 0 25px 5px 0;
   }
 
-  /*  div.navbar-header {
-    text-align: center;
-  }*/
+  #logo:hover {
+    filter: brightness(1.4);
+
+  }
 
   #logo2 {
     background: url('../imgs/logoXS.png') no-repeat;
@@ -41,12 +43,12 @@
     position: absolute;
   }
 
-  .navbar-brand h1 { /* Наименование ресторана */
+  .nav-link { /* Цвет выпадающего меню */
     font-family: 'Comfortaa', cursive;
     color: #e2e4dc;
-    font-size: 1.8em;
-    text-shadow: 2px 2px 2px #924f1b;
-    clear: right;
+    font-size: 1.2em;
+    line-height: 1.3;
+    text-shadow: 2px 2px 1px #924f1b;
   }
 
   .navbar-dark .navbar-nav .nav-link { /* Цвет выпадающего меню */
@@ -59,8 +61,8 @@
 
   .navbar-dark:hover .navbar-nav:hover .nav-link:hover {
     color: #e2e4dc;
-    text-decoration: underline;
-    text-shadow: 0px 0px 5px #f2a26a;
+    font-weight: bold;
+    text-shadow: 0px 0px 10px #f2a26a;
   }
 
   li { /*Выпадающее меню - выравнивание по вертикали*/
@@ -68,7 +70,7 @@
     margin-bottom:auto;
   } 
 
-  a#notacart {
+  a.notacart {
     padding-bottom: 1px;
   }
 
@@ -77,9 +79,12 @@
   }
 
   hr#lining { /* Разделительная черта для XS дисплеев */
-    background-color: #E0FFFF;
-    opacity: .15;
-    margin: 0;
+    align-self: center;
+    background-color: #924f1b;
+    width: 90px;
+    height: 2px;
+    margin-top: 5px;
+    margin-bottom: 0px;
   }
   
 /* Контент */
@@ -88,15 +93,17 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 10px;
+    margin-top: 10px;
   }
 
-  p#heading {
-    font-family: 'Comfortaa', cursive;
-    color: #E0FFFF;
-    font-size: 1.7em;
+  p#heading{
     text-align: center;
-    margin-bottom: 0px;
-    padding-top: 12px;
+    font-family: 'Comfortaa', cursive;
+    color: #e2e4dc;
+    font-size: 1.5em;
+    text-shadow: 0px 0px 10px #f2a26a;
+    margin-top:  2px;
+    margin: 0px;
   }
 
   div#innerbxs {
@@ -107,7 +114,8 @@
 
   #innerbxs:hover {
     box-shadow: 0px 0px 10px #fcad70;
-    filter: brightness(1.15);
+    filter: brightness(1.2);
+    cursor: pointer;
   }
 
   div.categories {
@@ -131,13 +139,14 @@
     margin-bottom: 0px;
     padding-top: 3px;
     bottom: 0;
-    border-bottom-left-radius: 2px;
-    border-bottom-right-radius: 2px;
+    border-bottom-left-radius: 1px;
+    border-bottom-right-radius: 1px;
   }
 
   #innerbxs {
     height:100%;
     border-radius: 2px;
+
   }
 
   #Salads > #innerbxs {
@@ -191,7 +200,7 @@
     margin-top: 20px;
   }
 
-  #delivery {
+  #dlvr {
     color: #e2e4dc;
   }
 
@@ -222,9 +231,9 @@
     font-size: 1.75em;
   }
 
-  a#tel:hover, a#delivery:hover, a#socialmed:hover, a#callus:hover {
-    text-decoration: underline;
-    text-shadow: 0px 0px 5px #db8246;
+  a#tel:hover, a#dlvr:hover, a#socialmed:hover, a#callus:hover {
+    font-weight: bold;
+    text-shadow: 0px 0px 10px #f2a26a;
   }
 
 /* Responsiveness options */
