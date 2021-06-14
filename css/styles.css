@@ -103,85 +103,114 @@
     font-size: 1.5em;
     text-shadow: 0px 0px 10px #f2a26a;
     margin-top:  2px;
-    margin: 0px;
   }
 
-  div#innerbxs {
-    position: relative;
-    border: 1px solid #372010;
-    box-shadow: 0px 0px 5px #7f4b22;
-  }
+  /*Главная*/
 
-  #innerbxs:hover {
-    box-shadow: 0px 0px 10px #fcad70;
-    filter: brightness(1.2);
-    cursor: pointer;
-  }
+    div#googlecomps {
+      position: relative;
+      height: 100%;
+      margin-left: 0px;
+      margin-right: 0px;
+      display: table;
+    }
 
-  div.categories {
-    font-family: 'Comfortaa', cursive;
-    color: #e2e4dc;
-    float: left;
-    padding: 0px 8px 0px 8px;
-    margin-top: 15px;
-    text-align: justify;
-  }
+    div#map {
+      float: left;
+      padding: 18px 18px;
+      height: 100%;
+    }
 
-  p#categoryheading {
-    position: absolute;
-    width:100%;
-    height: 35px;
-    background-color: #000;
-    opacity: .7;
-    text-align: center;
-    font-size: 1.2em;
-    font-weight: bold;
-    margin-bottom: 0px;
-    padding-top: 3px;
-    bottom: 0;
-    border-bottom-left-radius: 1px;
-    border-bottom-right-radius: 1px;
-  }
+    iframe {
+      border-radius: 10px;
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
 
-  #innerbxs {
-    height:100%;
-    border-radius: 2px;
+    #reviews {
+      float: left;
+      padding: 0;
+    }
 
-  }
+  /*Меню*/
 
-  #Salads > #innerbxs {
-    background: url(../imgs/Меню/salads.jpg) no-repeat center;
-    background-size: cover;
-  }
+    div#innerbxs {
+      position: relative;
+      border: 1px solid #372010;
+      box-shadow: 0px 0px 5px #7f4b22;
+    }
 
-  #Sushi > #innerbxs {
-    background: url(../imgs/Меню/sushi.jpg) no-repeat center;
-    background-size: cover;  
-  }
+    #innerbxs:hover {
+      box-shadow: 0px 0px 10px #fcad70;
+      filter: brightness(1.2);
+      cursor: pointer;
+    }
 
-  #WOK > #innerbxs {
-    background: url(../imgs/Меню/wok.jpg) no-repeat center;
-    background-size: cover;
-  }
+    div.categories {
+      font-family: 'Comfortaa', cursive;
+      color: #e2e4dc;
+      float: left;
+      padding: 0px 8px 0px 8px;
+      margin-top: 15px;
+      text-align: justify;
+    }
 
-  #Soups > #innerbxs  {
-    background: url(../imgs/Меню/soups.jpeg) no-repeat center;
-    background-size: cover;
-  }
+    p#categoryheading {
+      position: absolute;
+      width:100%;
+      height: 35px;
+      background-color: #000;
+      opacity: .7;
+      text-align: center;
+      font-size: 1.2em;
+      font-weight: bold;
+      margin-bottom: 0px;
+      padding-top: 3px;
+      bottom: 0;
+      border-bottom-left-radius: 1px;
+      border-bottom-right-radius: 1px;
+    }
 
-  #Main > #innerbxs{
-    background: url(../imgs/Меню/main.jpg) no-repeat center;
-    background-size: cover;
-  } 
+    #innerbxs {
+      height:100%;
+      border-radius: 2px;
 
-  #Specials > #innerbxs {
-    background: url(../imgs/Меню/specials.jpg) no-repeat center;
-    background-size: cover;
-  }
+    }
 
-  div#prefooter {
-    clear: both;
-  }
+    #Salads > #innerbxs {
+      background: url(../imgs/Меню/salads.jpg) no-repeat center;
+      background-size: cover;
+    }
+
+    #Sushi > #innerbxs {
+      background: url(../imgs/Меню/sushi.jpg) no-repeat center;
+      background-size: cover;  
+    }
+
+    #WOK > #innerbxs {
+      background: url(../imgs/Меню/wok.jpg) no-repeat center;
+      background-size: cover;
+    }
+
+    #Soups > #innerbxs  {
+      background: url(../imgs/Меню/soups.jpeg) no-repeat center;
+      background-size: cover;
+    }
+
+    #Main > #innerbxs{
+      background: url(../imgs/Меню/main.jpg) no-repeat center;
+      background-size: cover;
+    } 
+
+    #Specials > #innerbxs {
+      background: url(../imgs/Меню/specials.jpg) no-repeat center;
+      background-size: cover;
+    }
+
+    div#prefooter {
+      clear: both;
+    }
 
 /* Kолонтитул */
   footer {
