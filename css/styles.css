@@ -94,6 +94,7 @@
     margin-right: auto;
     margin-bottom: 10px;
     margin-top: 10px;
+    position: relative;
   }
 
   p#heading{
@@ -105,19 +106,24 @@
     margin-top:  2px;
   }
 
+  div#prefooter {
+    position: relative;
+    clear: left;
+    height: 1px;
+  }
+
   /*Главная*/
 
     div#googlecomps {
       position: relative;
-      height: 100%;
-      margin-left: 0px;
-      margin-right: 0px;
-      display: table;
+      width: 100%;
+      margin: 0;
+      height: 400px;
     }
 
     div#map {
       float: left;
-      padding: 18px 18px;
+      padding: 18px 18px 10px 18px;
       height: 100%;
     }
 
@@ -131,6 +137,7 @@
     #reviews {
       float: left;
       padding: 0;
+      clear: right;
     }
 
   /*Меню*/
@@ -207,11 +214,7 @@
       background: url(../imgs/Меню/specials.jpg) no-repeat center;
       background-size: cover;
     }
-
-    div#prefooter {
-      clear: both;
-    }
-
+  
 /* Kолонтитул */
   footer {
     background-color: #020403;
@@ -319,16 +322,6 @@
   }
 
   @media (min-width: 768px) and (max-width: 991px) {/* экраны M */
-    /*.navbar-brand.brand-md{
-      padding-top:28px;
-      font-size: 1.1em;
-    }
-    h1 {  высота строки наименования ресторана 
-      line-height: 0.62;
-    }
-    #sstring {
-      font-size:0.74em;
-    }*/
     #logo {
       width: 156px;
       height: 65px;
@@ -352,17 +345,17 @@
     .categories {
       height: 180px;
     }
+    div#googlecomps {
+      height: 211px;
+    }
+    #reviews {
+      height: 211px;
+      overflow: hidden;
+    }
   }
 
-  @media (max-width: 767px) {/* экраны SM */
-    /*    .navbar-brand.brand-sm {
-      padding-top:17px;
-      font-size: 1em; 
-    }
-    .navbar-brand {
-      text-align: left;
-    }*/
-      nav#header-nav {
+  @media (min-width: 575px) and (max-width: 767px) {/* экраны SM */
+    nav#header-nav {
       padding-bottom: 0px;
     }
     h1 { /* высота строки наименования ресторана */
@@ -372,84 +365,11 @@
     #logo { /* Замена логотипа на вариант для XS версии */
       background: url('../imgs/logo2.png') no-repeat;
       background-size: cover;
-      height: 50px;
-      width: 115px;
-      padding:1px;
-      margin:5px 15px 5px;
-      height: 50px;
-      position: absolute;
-      margin-left: auto;
-      margin-right: auto;
-      left: 0;
-      right: 0;
-    }
-    #logo2 { /*пустой рисуноу чтобы не схлопывалась панель навигации*/
-      background: url('../imgs/backdrop.png') no-repeat;
       height: 55px;
-      width: 80px;
-      position: relative;
-    }
-    .cart {
-      font-size: auto;
-    }
-    .bi {
-      font-size: 0em;
-    }
-    a#notacart {
-      padding: 8px;
-    }
-    a#cart {
-      padding: 8px 0 8px 0;
-    }
-    .bi {
-      font-size: 2em;
-    }
-    section#testimonials {
-      padding: 0px 0px 0px 12px;
-      text-align: left;
-    }
-    a#tel {
-      color: #e2e4dc;
-      font-size: 1.4em;
-      padding-top: 0px;
-      text-align:left;
-    }
-    a#callus {
-      font-size: 1.4em;
-    }
-    p#sstring {
-      font-size: 0.75em;
-      line-height: 0.5;
-      margin-bottom: 1px;
-      text-align: left;
-    }
-    .categories {
-      height: 180px;
-    }
-  }
-
-  @media (max-width: 575px) {/* экраны XS */
-    .navbar-brand.brand-sm {
-      padding-top:17px;
-      font-size: 1em; 
-    }
-    nav#header-nav {
-      padding-bottom: 0px;
-    }
-    .navbar-brand {
-      text-align: left;
-    }
-    h1 { /* высота строки наименования ресторана */
-      line-height: 0.55;
-      text-align: center;
-    }
-    #logo { /* Замена логотипа на вариант для XS версии */
-      /*      background: url('../imgs/logo2.png') no-repeat;*/
-      /*background-size: cover;*/
       width: 132px;
-      height: 55px;
-      margin-top: 0px;
-      margin-bottom: 7px;
+      padding:1px;
+      margin:0px 15px 7px;
+      height: 50px;
       position: absolute;
       margin-left: auto;
       margin-right: auto;
@@ -497,7 +417,104 @@
       text-align: left;
     }
     .categories {
+      height: 180px;
+    }
+    div#googlecomps {
+      height: 300px;
+    }
+    div#map {
+      padding-top: 0px;
       height: 250px;
     }
+    #reviews {
+      height: 150px;
+      overflow: hidden;
+    }    
+  }
+
+  @media (max-width: 575px) {/* экраны XS */
+    .navbar-brand.brand-sm {
+      padding-top:17px;
+      font-size: 1em; 
+    }
+    nav#header-nav {
+      padding-bottom: 0px;
+    }
+    .navbar-brand {
+      text-align: left;
+    }
+    h1 { /* высота строки наименования ресторана */
+      line-height: 0.55;
+      text-align: center;
+    }
+    #logo { /* Замена логотипа на вариант для XS версии */
+      width: 132px;
+      height: 55px;
+      margin-top: 0px;
+      margin-bottom: 7px;
+      position: absolute;
+      margin-left: auto;
+      margin-right: auto;
+      left: 0;
+      right: 0;
+
+    }
+    #logo2 { /*пустой рисуноу чтобы не схлопывалась панель навигации*/
+      background: url('../imgs/backdrop.png') no-repeat;
+      height: 62px;
+      width: 80px;
+      position: relative;
+    }
+    .cart {
+      font-size: auto;
+    }
+    .bi {
+      font-size: 0em;
+    }
+    a#notacart {
+      padding: 8px;
+    }
+    a#cart {
+      padding: 8px 0 8px 0;
+    }
+    .bi {
+      font-size: 2em;
+    }
+    section#testimonials {
+      padding: 0px 0px 0px 12px;
+      text-align: left;
+    }
+    a#tel {
+      color: #e2e4dc;
+      font-size: 1.4em;
+      padding-top: 0px;
+      text-align:left;
+    }
+    a#callus {
+      font-size: 1.4em;
+    }
+    p#sstring {
+      font-size: 0.75em;
+      line-height: 0.5;
+      margin-bottom: 1px;
+      text-align: left;
+    }
+    .categories {
+      height: 250px;
+    }
+    div#googlecomps {
+      height: 300px;
+    }
+    div#map {
+      padding-top: 0px;
+      height: 250px;
+    }   
+    #reviews {
+      height: 150px;
+      overflow: hidden;
+    }
+    .Header__Container-sc-17gc7x6-1.dQQWIN {
+    padding-left: 39px;
+    padding-right: 39px;
   }
 
