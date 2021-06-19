@@ -141,6 +141,26 @@
       clear: right;
     }
 
+    /*Настройки карусели*/
+
+      #pos1 {
+        float: left;
+      }
+
+      #postxt {
+        float: left;
+        width: 50%;
+      }
+      #subheading {
+        color:  #fff;
+        text-align: center;
+      }
+
+      #TDD {
+        color: #fff;
+        text-align: justify;
+      }
+
   /*Меню*/
 
     div#innerbxs {
