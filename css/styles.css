@@ -6,7 +6,7 @@
   }
 
   body {
-  	background-color: #020403;; 
+  	background-color: #020403;
   }
 
 /* Панель навигации */
@@ -143,16 +143,45 @@
 
     /*Настройки карусели*/
 
-      #pos1 {
+      .carousel-item {
+        padding: 0 10%;
+        height: fit-content;
+        position: relative;
+        border-radius: 5px;
+      }
+      
+      #posimg {
         float: left;
+        width: 50%;
+        padding: 30px 15px 30px 15px;
+        height: auto;
+      }
+
+      #cimg {
+        max-width: 100%;
+        height: auto;
+        border-radius: 3px;
       }
 
       #postxt {
+        position: relative;
         float: left;
+        font-family: 'Poiret One', cursive;
+        font-size: 21px;
         width: 50%;
+        height: ;
+        padding: 20px 10px 20px 10px;
       }
+
+      #innertxt {
+        height: 100%;
+        margin-top: auto;
+        margin-bottom: auto;
+      }
+
       #subheading {
         color:  #fff;
+        font-weight: bold;
         text-align: center;
       }
 
